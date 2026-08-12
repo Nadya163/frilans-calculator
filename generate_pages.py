@@ -21,7 +21,7 @@ generate_pages.py — генератор страниц сайта «Фрила�
 
 import os
 
-BASE_URL  = "https://frilans-calculator.ru"   # TODO:
+BASE_URL  = "https://frilans-calculator.ru" 
 SITE_NAME = "Фриланс-Калькулятор"
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
