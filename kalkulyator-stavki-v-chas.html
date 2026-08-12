@@ -1,150 +1,271 @@
 <!doctype html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Калькулятор почасовой ставки фрилансера — сколько брать за час работы</title>
-<meta name="description" content="Рассчитайте доход фрилансера по часовой ставке с учётом налога НПД 4% или 6%. Укажите ставку и часы — узнайте доход в месяц на руки.">
-<link rel="canonical" href="https://your-domain.ru/kalkulyator-stavki-v-chas.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Калькулятор почасовой ставки фрилансера — сколько брать за час работы">
-<meta property="og:description" content="Рассчитайте доход фрилансера по часовой ставке с учётом налога НПД 4% или 6%. Укажите ставку и часы — узнайте доход в месяц на руки.">
-<meta property="og:url" content="https://your-domain.ru/kalkulyator-stavki-v-chas.html">
-<link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/style.css">
-<script>window.CALC_CONFIG = {"mainMode": "hidden", "showHourly": true, "showLimit": false};</script>
-</head>
-<body>
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111534160', 'ym');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Калькулятор почасовой ставки фрилансера — сколько брать за час работы
+    </title>
+    <meta
+      name="description"
+      content="Рассчитайте доход фрилансера по часовой ставке с учётом налога НПД 4% или 6%. Укажите ставку и часы — узнайте доход в месяц на руки."
+    />
+    <link
+      rel="canonical"
+      href="https://frilans-calculator.ru/kalkulyator-stavki-v-chas.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Калькулятор почасовой ставки фрилансера — сколько брать за час работы"
+    />
+    <meta
+      property="og:description"
+      content="Рассчитайте доход фрилансера по часовой ставке с учётом налога НПД 4% или 6%. Укажите ставку и часы — узнайте доход в месяц на руки."
+    />
+    <meta
+      property="og:url"
+      content="https://frilans-calculator.ru/kalkulyator-stavki-v-chas.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script>
+      window.CALC_CONFIG = {
+        mainMode: "hidden",
+        showHourly: true,
+        showLimit: false,
+      };
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a));
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js?id=111534160",
+        "ym",
+      );
 
-    ym(111534160, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/111534160" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<header class="site-header">
-  <div class="container">
-    <a href="./index.html" class="brand">
-      <img src="./favicon.svg" alt="Фриланс-Калькулятор">
-      <span>Фриланс-Калькулятор</span>
-    </a>
-    <nav class="site-nav">
-      <a href="./index.html">Калькулятор</a>
-      <a href="./kalkulyator-stavki-v-chas.html" class="active">Ставка в час</a>
-      <a href="./nalog-samozanyatogo-kalkulyator.html">Налог НПД</a>
-      <a href="./skolko-vzyat-s-zakaza.html">Сумма заказа</a>
-      <a href="./stavka-frilansera-v-den-mesyats.html">В день / в месяц</a>
-      <a href="./kalkulyator-dlya-samozanyatogo-it.html">Для IT-фрилансера</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero container">
-    <h1>Калькулятор почасовой ставки фрилансера</h1>
-    <p class="lead">Укажите ставку за час и количество рабочих часов в неделю — калькулятор покажет, сколько вы заработаете в месяц на руки с учётом налога самозанятого.</p>
-  </section>
-
-  <div class="container">
-
-
-
-      <h2 class="section-title" id="hourly-title">Расчёт дохода по часовой ставке</h2>
-      <p class="section-sub" id="hourly-sub">Укажите ставку и часы — получите доход в месяц на руки.</p>
-
-      <div class="calc-card" id="calc-hourly">
-        <div class="field-row">
-          <div class="field">
-            <label for="hourlyRate">Ставка, ₽ / час</label>
-            <input type="number" id="hourlyRate" min="0" step="50" value="1200">
-          </div>
-          <div class="field">
-            <label for="hoursPerWeek">Часов в неделю</label>
-            <input type="number" id="hoursPerWeek" min="0" step="1" value="25">
-          </div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="weeksPerMonth">Недель в месяце</label>
-            <input type="number" id="weeksPerMonth" min="0" step="0.01" value="4.33">
-          </div>
-          <div class="field">
-            <label for="clientTypeHourly">Кто платит</label>
-            <select id="clientTypeHourly">
-              <option value="fl">Физлицо (4%)</option>
-              <option value="ul">Юрлицо / ИП (6%)</option>
-            </select>
-          </div>
-        </div>
-
-        <label class="checkbox-row">
-          <input type="checkbox" id="useDeductionHourly">
-          Учесть налоговый вычет 10 000 ₽
-        </label>
-        <div class="field-row" id="deductionRowHourly" style="display:none;">
-          <div class="field">
-            <label for="deductionRemainingHourly">Остаток вычета, ₽</label>
-            <input type="number" id="deductionRemainingHourly" min="0" step="100" value="10000">
-          </div>
-        </div>
-
-        <div class="result">
-          <div class="result-row">
-            <span class="label">Доход в месяц до налога</span>
-            <span class="value" id="hourlyGross">—</span>
-          </div>
-          <div class="result-row tax">
-            <span class="label">Налог НПД</span>
-            <span class="value" id="hourlyTax">—</span>
-          </div>
-          <div class="result-row main">
-            <span class="label">На руки в месяц</span>
-            <span class="value" id="hourlyNet">—</span>
-          </div>
-        </div>
-      <p class="security-badge">🔒 Расчёт в браузере — данные никуда не отправляются</p>
+      ym(111534160, "init", {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/111534160"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <header class="site-header">
+      <div class="container">
+        <a href="./index.html" class="brand">
+          <img src="./favicon.svg" alt="Фриланс-Калькулятор" />
+          <span>Фриланс-Калькулятор</span>
+        </a>
+        <nav class="site-nav">
+          <a href="./index.html">Калькулятор</a>
+          <a href="./kalkulyator-stavki-v-chas.html" class="active"
+            >Ставка в час</a
+          >
+          <a href="./nalog-samozanyatogo-kalkulyator.html">Налог НПД</a>
+          <a href="./skolko-vzyat-s-zakaza.html">Сумма заказа</a>
+          <a href="./stavka-frilansera-v-den-mesyats.html">В день / в месяц</a>
+          <a href="./kalkulyator-dlya-samozanyatogo-it.html"
+            >Для IT-фрилансера</a
+          >
+        </nav>
       </div>
+    </header>
 
+    <main>
+      <section class="hero container">
+        <h1>Калькулятор почасовой ставки фрилансера</h1>
+        <p class="lead">
+          Укажите ставку за час и количество рабочих часов в неделю —
+          калькулятор покажет, сколько вы заработаете в месяц на руки с учётом
+          налога самозанятого.
+        </p>
+      </section>
 
+      <div class="container">
+        <h2 class="section-title" id="hourly-title">
+          Расчёт дохода по часовой ставке
+        </h2>
+        <p class="section-sub" id="hourly-sub">
+          Укажите ставку и часы — получите доход в месяц на руки.
+        </p>
 
-    <article class="article">
-<h2>Как выбрать почасовую ставку</h2>
-<p>Ставка за час должна покрывать налог, простои между заказами, отпуск
-и непредвиденные расходы. Многие фрилансеры закладывают 20–30% сверху
-желаемого чистого дохода — именно для этого и нужен калькулятор.</p>
-<h2>Пример расчёта</h2>
-<p>При ставке 1500 ₽/час, 25 часах в неделю и работе с физлицами (4%) —
-доход в месяц до налога около 162 000 ₽, на руки около 155 500 ₽.
-Введите свои цифры выше.</p>
-    </article>
+        <div class="calc-card" id="calc-hourly">
+          <div class="field-row">
+            <div class="field">
+              <label for="hourlyRate">Ставка, ₽ / час</label>
+              <input
+                type="number"
+                id="hourlyRate"
+                min="0"
+                step="50"
+                value="1200"
+              />
+            </div>
+            <div class="field">
+              <label for="hoursPerWeek">Часов в неделю</label>
+              <input
+                type="number"
+                id="hoursPerWeek"
+                min="0"
+                step="1"
+                value="25"
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="weeksPerMonth">Недель в месяце</label>
+              <input
+                type="number"
+                id="weeksPerMonth"
+                min="0"
+                step="0.01"
+                value="4.33"
+              />
+            </div>
+            <div class="field">
+              <label for="clientTypeHourly">Кто платит</label>
+              <select id="clientTypeHourly">
+                <option value="fl">Физлицо (4%)</option>
+                <option value="ul">Юрлицо / ИП (6%)</option>
+              </select>
+            </div>
+          </div>
 
-    <div class="related">
-      <h2>Другие расчёты</h2>
-      <ul>
-        <li><a href="./index.html">Калькулятор ставки фрилансера и налога самозанятого 2026</a></li>
-        <li><a href="./nalog-samozanyatogo-kalkulyator.html">Калькулятор налога самозанятого (НПД) 4% и 6% онлайн — 2026</a></li>
-        <li><a href="./skolko-vzyat-s-zakaza.html">Сколько взять с заказа фрилансеру, чтобы не потерять на налоге</a></li>
-        <li><a href="./stavka-frilansera-v-den-mesyats.html">Ставка фрилансера в день и в месяц — калькулятор дохода онлайн</a></li>
-        <li><a href="./kalkulyator-dlya-samozanyatogo-it.html">Калькулятор для самозанятого IT-фрилансера — ставка, налог, лимит дохода</a></li>
-      </ul>
-    </div>
+          <label class="checkbox-row">
+            <input type="checkbox" id="useDeductionHourly" />
+            Учесть налоговый вычет 10 000 ₽
+          </label>
+          <div class="field-row" id="deductionRowHourly" style="display: none">
+            <div class="field">
+              <label for="deductionRemainingHourly">Остаток вычета, ₽</label>
+              <input
+                type="number"
+                id="deductionRemainingHourly"
+                min="0"
+                step="100"
+                value="10000"
+              />
+            </div>
+          </div>
 
-  </div>
-</main>
+          <div class="result">
+            <div class="result-row">
+              <span class="label">Доход в месяц до налога</span>
+              <span class="value" id="hourlyGross">—</span>
+            </div>
+            <div class="result-row tax">
+              <span class="label">Налог НПД</span>
+              <span class="value" id="hourlyTax">—</span>
+            </div>
+            <div class="result-row main">
+              <span class="label">На руки в месяц</span>
+              <span class="value" id="hourlyNet">—</span>
+            </div>
+          </div>
+          <p class="security-badge">
+            🔒 Расчёт в браузере — данные никуда не отправляются
+          </p>
+        </div>
 
-<footer class="site-footer">
-  <div class="container">
-    Фриланс-Калькулятор · расчёт носит справочный характер и не является налоговой консультацией
-  </div>
-</footer>
+        <article class="article">
+          <h2>Как выбрать почасовую ставку</h2>
+          <p>
+            Ставка за час должна покрывать налог, простои между заказами, отпуск
+            и непредвиденные расходы. Многие фрилансеры закладывают 20–30%
+            сверху желаемого чистого дохода — именно для этого и нужен
+            калькулятор.
+          </p>
+          <h2>Пример расчёта</h2>
+          <p>
+            При ставке 1500 ₽/час, 25 часах в неделю и работе с физлицами (4%) —
+            доход в месяц до налога около 162 000 ₽, на руки около 155 500 ₽.
+            Введите свои цифры выше.
+          </p>
+        </article>
 
-<script src="./assets/tool.js"></script>
-</body>
+        <div class="related">
+          <h2>Другие расчёты</h2>
+          <ul>
+            <li>
+              <a href="./index.html"
+                >Калькулятор ставки фрилансера и налога самозанятого 2026</a
+              >
+            </li>
+            <li>
+              <a href="./nalog-samozanyatogo-kalkulyator.html"
+                >Калькулятор налога самозанятого (НПД) 4% и 6% онлайн — 2026</a
+              >
+            </li>
+            <li>
+              <a href="./skolko-vzyat-s-zakaza.html"
+                >Сколько взять с заказа фрилансеру, чтобы не потерять на
+                налоге</a
+              >
+            </li>
+            <li>
+              <a href="./stavka-frilansera-v-den-mesyats.html"
+                >Ставка фрилансера в день и в месяц — калькулятор дохода
+                онлайн</a
+              >
+            </li>
+            <li>
+              <a href="./kalkulyator-dlya-samozanyatogo-it.html"
+                >Калькулятор для самозанятого IT-фрилансера — ставка, налог,
+                лимит дохода</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        Фриланс-Калькулятор · расчёт носит справочный характер и не является
+        налоговой консультацией
+      </div>
+    </footer>
+
+    <script src="./assets/tool.js"></script>
+  </body>
 </html>
