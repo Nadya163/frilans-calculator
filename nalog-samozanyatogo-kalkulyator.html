@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор налога самозанятого (НПД) 4% и 6% онлайн — 2026</title>
+<meta name="description" content="Онлайн-калькулятор налога на профессиональный доход: 4% с физлиц, 6% с юрлиц и ИП. Учитывает налоговый вычет 10 000 ₽. Расчёт в браузере.">
+<link rel="canonical" href="https://your-domain.ru/nalog-samozanyatogo-kalkulyator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Калькулятор налога самозанятого (НПД) 4% и 6% онлайн — 2026">
+<meta property="og:description" content="Онлайн-калькулятор налога на профессиональный доход: 4% с физлиц, 6% с юрлиц и ИП. Учитывает налоговый вычет 10 000 ₽. Расчёт в браузере.">
+<meta property="og:url" content="https://your-domain.ru/nalog-samozanyatogo-kalkulyator.html">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/style.css">
+<script>window.CALC_CONFIG = {"mainMode": "net", "showHourly": false, "showLimit": false};</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="./index.html" class="brand">
+      <img src="./favicon.svg" alt="Фриланс-Калькулятор">
+      <span>Фриланс-Калькулятор</span>
+    </a>
+    <nav class="site-nav">
+      <a href="./index.html">Калькулятор</a>
+      <a href="./kalkulyator-stavki-v-chas.html">Ставка в час</a>
+      <a href="./nalog-samozanyatogo-kalkulyator.html" class="active">Налог НПД</a>
+      <a href="./skolko-vzyat-s-zakaza.html">Сумма заказа</a>
+      <a href="./stavka-frilansera-v-den-mesyats.html">В день / в месяц</a>
+      <a href="./kalkulyator-dlya-samozanyatogo-it.html">Для IT-фрилансера</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <h1>Калькулятор налога самозанятого — НПД 4% и 6%</h1>
+    <p class="lead">Введите сумму дохода от клиента — калькулятор покажет, сколько уйдёт на налог НПД и сколько останется на руках. Данные не покидают ваш браузер.</p>
+  </section>
+
+  <div class="container">
+
+      <div class="calc-card" id="calc-main">
+        <div class="mode-toggle">
+          <button type="button" id="modeNet">Сколько получу на руки</button>
+          <button type="button" id="modeGross">Сколько выставить клиенту</button>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label id="amountLabel" for="amount">Сумма от клиента, ₽</label>
+            <input type="number" id="amount" min="0" step="100" value="50000">
+          </div>
+          <div class="field">
+            <label for="clientType">Кто платит</label>
+            <select id="clientType">
+              <option value="fl">Физлицо (4%)</option>
+              <option value="ul">Юрлицо / ИП (6%)</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="useDeduction">
+          Учесть налоговый вычет 10 000 ₽ (снижает ставку до его исчерпания)
+        </label>
+        <div class="field-row" id="deductionRow" style="display:none;">
+          <div class="field">
+            <label for="deductionRemaining">Остаток вычета, ₽</label>
+            <input type="number" id="deductionRemaining" min="0" step="100" value="10000">
+          </div>
+        </div>
+
+        <div class="result">
+          <div class="result-row main">
+            <span class="label" id="resultMainLabel">Получите на руки</span>
+            <span class="value" id="resultMain">—</span>
+          </div>
+          <div class="result-row tax">
+            <span class="label">Налог НПД</span>
+            <span class="value" id="resultTax">—</span>
+          </div>
+          <div class="result-row">
+            <span class="label">Ставка</span>
+            <span class="value" id="resultRate">—</span>
+          </div>
+          <div class="result-row" id="resultDeductionRow" style="display:none;">
+            <span class="label">Остаток вычета после расчёта</span>
+            <span class="value" id="resultDeductionLeft">—</span>
+          </div>
+        </div>
+
+      <p class="security-badge">🔒 Расчёт в браузере — данные никуда не отправляются</p>
+      </div>
+
+    <article class="article">
+<h2>Кто платит 4%, а кто 6%</h2>
+<p>Ставка зависит исключительно от типа плательщика: 4% — если оплату
+вносит физлицо, 6% — если юрлицо или ИП. Вид деятельности на ставку
+не влияет.</p>
+<h2>Когда приходит уведомление о налоге</h2>
+<p>ФНС присылает уведомление в приложении «Мой налог» до 12 числа следующего
+месяца, оплатить нужно до 28 числа. Калькулятор поможет заранее
+отложить нужную сумму.</p>
+    </article>
+
+    <div class="related">
+      <h2>Другие расчёты</h2>
+      <ul>
+        <li><a href="./index.html">Калькулятор ставки фрилансера и налога самозанятого 2026</a></li>
+        <li><a href="./kalkulyator-stavki-v-chas.html">Калькулятор почасовой ставки фрилансера — сколько брать за час работы</a></li>
+        <li><a href="./skolko-vzyat-s-zakaza.html">Сколько взять с заказа фрилансеру, чтобы не потерять на налоге</a></li>
+        <li><a href="./stavka-frilansera-v-den-mesyats.html">Ставка фрилансера в день и в месяц — калькулятор дохода онлайн</a></li>
+        <li><a href="./kalkulyator-dlya-samozanyatogo-it.html">Калькулятор для самозанятого IT-фрилансера — ставка, налог, лимит дохода</a></li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    Фриланс-Калькулятор · расчёт носит справочный характер и не является налоговой консультацией
+  </div>
+</footer>
+
+<script src="./assets/tool.js"></script>
+</body>
+</html>

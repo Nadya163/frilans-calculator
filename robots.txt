@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frilans-calculator.ru/sitemap.xml
